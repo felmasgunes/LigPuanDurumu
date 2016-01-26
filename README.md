@@ -5,7 +5,7 @@ Bootsrap tablo yapısına uygun olarak kodlanmış **Süper Lig** ve **1. Lig** 
 puan_durumu.php, .superlig.cache ve .1lig.cache dosyalarını kullanacağınız  klasöre kopyalayın. PHP dosyasının değiştirebilmesi için cache dosyalarına gerekli izinleri verin.
 
 ## Kullanım
-puan_durumu.php dosyasını tabloyu eklemek istediğiniz php dosyasına include edin. Puan tablosunun ekrana basılması için LigPuanTablosu:get(); komutunu kullanabilirsiniz.
+puan_durumu.php dosyasını tabloyu eklemek istediğiniz php dosyasına include edin. Puan tablosunun ekrana basılması için **LigPuanTablosu:get();** komutunu kullanabilirsiniz. 1. Lig puan tablosu için **LigPuanTablosu:get(1);** komutunu kullanabilirsiniz.
 ```php
 @include 'puan_durumu.php';
 LigPuanTablosu:get(); // Süper Lig Puan Tablosu
