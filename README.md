@@ -1,19 +1,23 @@
-# Bootstrap Uyumlu Süper Lig ve 1. Lig Puan Durumu Tablosu
-Bootsrap tablo yapısına uygun olarak kodlanmış **Süper Lig** ve **1. Lig** Puan Durumu Tablosu. Cache sayesinde sürekli dış siteye istek göndermez ve sitenizi yavaşlatmaz.
+# Bootstrap Uyumlu SÃ¼per Lig ve 1. Lig Puan Durumu Tablosu
+Bootsrap tablo yapÄ±sÄ±na uygun olarak kodlanmÄ±ÅŸ **SÃ¼per Lig** ve **1. Lig** Puan Durumu Tablosu. Cache sayesinde sÃ¼rekli dÄ±ÅŸ siteye istek gÃ¶ndermez ve sitenizi yavaÅŸlatmaz.
 
-## Kullanım
+## Kurulum
+puan_durumu.php, .superlig.cache ve .1lig.cache dosyalarÄ±nÄ± kullanacaÄŸÄ±nÄ±z  klasÃ¶re kopyalayÄ±n. PHP dosyasÄ±nÄ±n deÄŸiÅŸtirebilmesi iÃ§in cache dosyalarÄ±na gerekli izinleri verin.
+
+## KullanÄ±m
+puan_durumu.php dosyasÄ±nÄ± tabloyu eklemek istediÄŸiniz php dosyasÄ±na include edin. Puan tablosunun ekrana basÄ±lmasÄ± iÃ§in LigPuanTablosu:get(); komutunu kullanabilirsiniz.
 ```php
 @include 'puan_durumu.php';
-LigPuanTablosu:get(); // Süper Lig Puan Tablosu
+LigPuanTablosu:get(); // SÃ¼per Lig Puan Tablosu
 LigPuanTablosu:get(1); // 1. Lig Puan Tablosu
 ```
 
 ## Ayarlar
-***puan_durumu.php*** dosyasını herhangi bir editor ile açarak gerekli değişiklikleri gerçekleştirebilirsiniz.
+***puan_durumu.php*** dosyasÄ±nÄ± herhangi bir editor ile aÃ§arak gerekli deÄŸiÅŸiklikleri gerÃ§ekleÅŸtirebilirsiniz.
 
-#### Cache Süresi
+#### Cache SÃ¼resi
 ```php
-private static $cacheTime = 3600; // Saniye olarak yenileme süresi değiştirilebilir
+private static $cacheTime = 3600; // Saniye olarak yenileme sÃ¼resi deÄŸiÅŸtirilebilir
 ```
 
-**Not**: Veri sağlayıcı sitenin ilgili sayfası değiştiği takdirde pattern düzenlenmelidir!
+**Not**: Veri saÄŸlayÄ±cÄ± sitenin ilgili sayfasÄ± deÄŸiÅŸtiÄŸi takdirde pattern dÃ¼zenlenmelidir!
